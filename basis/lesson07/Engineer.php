@@ -1,6 +1,6 @@
 <?php
-namespace basis\lesson06;
-// 課題：PHP基礎Lesson06
+namespace basis\lesson07;
+// 課題：PHP基礎Lesson07
 // 作者：長沼 佑
 
 // Engineerクラス

@@ -3,7 +3,7 @@ namespace basis\lesson05;
 // 課題：PHP基礎Lesson05
 // 作者：長沼 佑
 require "Person.php";
-use basis\lesson04\Person;
+use basis\lesson05\Person;
 
 // Person情報登録
 $taro = new Person("佐藤太郎","東京都","20","030123456");
@@ -15,9 +15,9 @@ list($taro,$hanako,$jiro) = array(new Person("佐藤太郎","東京都","20","03
 
 // printメソッドを使って出力
 $taro->printInfo();
-echo "<br>";
+echo "\n";
 $hanako->printInfo();
-echo "<br>";
+echo "\n";
 $jiro->printInfo();
 
 ?>

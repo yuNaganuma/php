@@ -1,5 +1,5 @@
 <?php
-namespace basis\lesson04;
+namespace basis\lesson05;
 // 課題：PHP基礎Lesson05
 // 作者：長沼 佑
 
@@ -20,10 +20,10 @@ class Person{
 
     // 出力メソッド
     public function printInfo(){
-        echo "氏名:{$this->getName()}<br>";
-        echo "住所:{$this->getAddress()}<br>";
-        echo "年齢:{$this->getAge()}<br>";
-        echo "電話番号:{$this->getTelephone()}<br>";
+        echo "氏名:{$this->getName()}\n";
+        echo "住所:{$this->getAddress()}\n";
+        echo "年齢:{$this->getAge()}\n";
+        echo "電話番号:{$this->getTelephone()}\n";
     }
     
     function setName($name) {
