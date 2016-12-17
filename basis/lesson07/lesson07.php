@@ -25,7 +25,7 @@ array_push($list, $saburo);
 
 // 一覧表示
 foreach ($list as $data) {
-    $data->printInfo();
+    echo "{$data->printInfo()}\n";
 }
 
 echo "\n";
