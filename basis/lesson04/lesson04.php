@@ -14,9 +14,9 @@ $jiro = new Person("木村 次郎","京都府","38","0750123456");
 
 // printメソッドを使って出力
 $taro->printInfo();
-echo "<br>";
+echo "\n";
 $hanako->printInfo();
-echo "<br>";
+echo "\n";
 $jiro->printInfo();
 
 ?>
