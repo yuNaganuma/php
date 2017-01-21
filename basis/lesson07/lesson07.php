@@ -25,7 +25,7 @@ array_push($list, $saburo);
 
 // 一覧表示
 foreach ($list as $data) {
-    $data->printInfo();
+    echo "{$data->printInfo()}\n";
 }
 
 echo "\n";
@@ -34,14 +34,10 @@ echo "\n";
 $searchWord = "木村";
 echo "前方一致検索をします\n";
 echo "検索ワード：\"$searchWord\"\n";
-$lineSep = "";
 foreach ($list as $data) {
     if(strpos($data->getName(), $searchWord) === 0) {
-        echo $lineSep;
-        echo $data->getName();
-        $lineSep = "\n";
+        echo "{$data->getName()}\n";
     }
-
 }
 
 ?>

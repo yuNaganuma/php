@@ -1,15 +1,15 @@
 <?php
-// ‰Û‘èFPHPŠî‘bLesson08
-// ìÒF’·À —C
+// èª²é¡Œï¼šPHPåŸºç¤Lesson08
+// ä½œè€…ï¼šé•·æ²¼ ä½‘
 
-// ”’l‚ÌƒŠƒXƒg
+// æ•°å€¤ã®ãƒªã‚¹ãƒˆ
 $list = array();
 
-// ˆø”‚ğƒŠƒXƒg‚ÉŠi”[
+// å¼•æ•°ã‚’ãƒªã‚¹ãƒˆã«æ ¼ç´
 for($i = 1; $i < count($argv); $i++) {
     try {
         if(!is_numeric($argv[$i])){
-            throw new InvalidArgumentException("\"$argv[$i]\"‚Í”’l‚Å‚Í‚ ‚è‚Ü‚¹‚ñ\n");
+            throw new InvalidArgumentException("\"$argv[$i]\"ã¯æ•°å€¤ã§ã¯ã‚ã‚Šã¾ã›ã‚“\n");
         }
         array_push($list, (int) $argv[$i]);
     } catch (InvalidArgumentException $e) {
@@ -17,11 +17,11 @@ for($i = 1; $i < count($argv); $i++) {
     }
 }
 
-// ƒoƒuƒ‹ƒ\[ƒg
+// ãƒãƒ–ãƒ«ã‚½ãƒ¼ãƒˆ
 for($i = 0; $i < count($list); $i++){
     for($j = 0; $j < count($list) - $i - 1; $j++){
         if($list[$j] > $list[$j + 1]){
-            // $list[$j] > $list[$j + 1]‚Ìê‡A’l‚ğ“ü‚ê‘Ö‚¦
+            // $list[$j] > $list[$j + 1]ã®å ´åˆã€å€¤ã‚’å…¥ã‚Œæ›¿ãˆ
             $tmp = $list[$j];
             $list[$j] = $list[$j + 1];
             $list[$j + 1] = $tmp;
@@ -30,11 +30,12 @@ for($i = 0; $i < count($list); $i++){
     }
 }
 
-echo "”’l‚Ìˆø”‚ğƒ\[ƒg‚µ‚Ü‚µ‚½F";
+echo "æ•°å€¤ã®å¼•æ•°ã‚’ã‚½ãƒ¼ãƒˆã—ã¾ã—ãŸï¼š";
 $sep = "";
 foreach($list as $data){
     echo $sep . $data;
     $sep = " ";
 }
+echo "\n";
 
 ?>
